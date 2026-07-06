@@ -533,7 +533,7 @@ function Team() {
           <img
             src={teamAsset.url}
             alt="Leticia and Guilherme, founding specialists"
-            className="relative w-full h-[560px] object-cover"
+            className="relative w-full h-[420px] md:h-[560px] object-cover object-top"
           />
         </div>
         <div className="lg:col-span-7">
