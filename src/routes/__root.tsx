@@ -84,7 +84,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
           "Boutique med spa in Charlotte, NC. Botox, dermal fillers, Ultraformer MPT and the original Hydrafacial delivered by Leticia & Guilherme for naturally elegant results.",
       },
       { name: "author", content: "Skin Lab Med Spa" },
-      { property: "og:title", content: "Skin Lab Med Spa — Advanced Aesthetics, Natural Results" },
+      { property: "og:title", content: "Skin Lab Med Spa — Advanced Aesthetics in Charlotte, NC" },
       {
         property: "og:description",
         content:
@@ -93,6 +93,12 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:site", content: "@skinlab_medspa" },
+      { name: "twitter:title", content: "Skin Lab Med Spa — Advanced Aesthetics in Charlotte, NC" },
+      { name: "description", content: "Boutique med spa in Charlotte, NC. Botox, dermal fillers, Ultraformer MPT and the original Hydrafacial delivered by Leticia & Guilherme for naturally elegant results." },
+      { property: "og:description", content: "Boutique med spa in Charlotte, NC. Botox, dermal fillers, Ultraformer MPT and the original Hydrafacial delivered by Leticia & Guilherme for naturally elegant results." },
+      { name: "twitter:description", content: "Boutique med spa in Charlotte, NC. Botox, dermal fillers, Ultraformer MPT and the original Hydrafacial delivered by Leticia & Guilherme for naturally elegant results." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/3e39bb9c-2dd3-499a-8808-14d21a4c3bfb/id-preview-dcfdd90b--50846220-8b6e-473f-9506-fcf7aade2ef5.lovable.app-1783355272870.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/3e39bb9c-2dd3-499a-8808-14d21a4c3bfb/id-preview-dcfdd90b--50846220-8b6e-473f-9506-fcf7aade2ef5.lovable.app-1783355272870.png" },
     ],
     links: [
       {
