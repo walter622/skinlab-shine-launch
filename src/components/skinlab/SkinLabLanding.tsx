@@ -97,7 +97,7 @@ function Nav() {
     <header className="fixed top-0 inset-x-0 z-50 bg-forest/95 backdrop-blur border-b border-gold/15">
       <div className="mx-auto max-w-6xl px-6 md:px-10 lg:px-16 h-24 md:h-28 flex items-center justify-between">
         <a href="#top" className="flex items-center">
-          <img src={logoAsset.url} alt="Skin Lab Med Spa" className="h-24 md:h-36 w-auto" />
+          <img src={logoAsset.url} alt="Skin Lab Med Spa" className="h-28 md:h-44 w-auto" />
         </a>
         <nav className="hidden lg:flex items-center gap-9">
           {links.map(([label, href]) => (
@@ -195,12 +195,6 @@ function Hero() {
             <CTAButton href="#consultation" variant="gold">
               Request Your Consultation
             </CTAButton>
-            <a
-              href="#treatments"
-              className="text-[12px] tracking-[0.24em] uppercase text-cream/70 hover:text-gold border-b border-cream/20 hover:border-gold pb-1 transition-colors"
-            >
-              Explore Treatments
-            </a>
           </div>
           <div className="mt-14 grid grid-cols-3 gap-6 max-w-md">
             {[
@@ -227,7 +221,7 @@ function Hero() {
           <img
             src={teamAsset.url}
             alt="Leticia and Guilherme, founding specialists at Skin Lab Med Spa"
-            className="relative w-full h-[520px] md:h-[620px] object-cover"
+            className="relative w-full h-[520px] md:h-[620px] object-cover object-top"
           />
           <div className="absolute bottom-4 left-4 right-4 bg-forest/85 backdrop-blur px-5 py-4 border-l-2 border-gold">
             <div className="text-[10px] tracking-[0.28em] uppercase text-gold">
