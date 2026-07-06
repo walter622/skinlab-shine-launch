@@ -815,7 +815,7 @@ function FinalCTA() {
       </p>
       <div className="mt-10">
         <CTAButton href="#consultation" variant="primary">
-          Book Your Consultation
+          Request Your Consultation
         </CTAButton>
       </div>
     </Section>
