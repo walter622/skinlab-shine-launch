@@ -95,7 +95,7 @@ function Nav() {
   ];
   return (
     <header className="fixed top-0 inset-x-0 z-50 bg-forest/95 backdrop-blur border-b border-gold/15">
-      <div className="mx-auto max-w-6xl px-6 md:px-10 lg:px-16 h-20 flex items-center justify-between">
+      <div className="mx-auto max-w-6xl px-6 md:px-10 lg:px-16 h-24 md:h-28 flex items-center justify-between">
         <a href="#top" className="flex items-center">
           <img src={logoAsset.url} alt="Skin Lab Med Spa" className="h-14 md:h-16 w-auto" />
         </a>
@@ -163,7 +163,7 @@ function Hero() {
   return (
     <section
       id="top"
-      className="relative pt-32 md:pt-36 pb-20 md:pb-28 bg-forest text-cream overflow-hidden"
+      className="relative pt-36 md:pt-44 pb-20 md:pb-28 bg-forest text-cream overflow-hidden"
     >
       <div
         aria-hidden
