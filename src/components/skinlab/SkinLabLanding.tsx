@@ -573,7 +573,7 @@ function Team() {
           </p>
           <div className="mt-10 flex flex-wrap gap-4">
             <CTAButton href="#consultation" variant="gold">
-              Book With Us
+              Request Your Consultation
             </CTAButton>
             <a
               href={INSTAGRAM}
