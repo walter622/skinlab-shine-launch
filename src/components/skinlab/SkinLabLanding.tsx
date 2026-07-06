@@ -282,6 +282,11 @@ function Why() {
           next-generation medical technology with a sophisticated eye for advanced
           aesthetics to keep you looking pristine and elegant at any age.
         </p>
+        <div className="mt-8">
+          <CTAButton href="#consultation" variant="primary">
+            Request Your Consultation
+          </CTAButton>
+        </div>
       </div>
 
       <div className="mt-14 relative aspect-video w-full bg-forest overflow-hidden group cursor-pointer">
