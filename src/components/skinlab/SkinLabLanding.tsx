@@ -431,12 +431,9 @@ function Treatments() {
             Advanced procedures engineered for elegance.
           </h2>
         </div>
-        <a
-          href="#consultation"
-          className="text-[12px] tracking-[0.24em] uppercase text-forest/70 hover:text-gold border-b border-forest/20 hover:border-gold pb-1 w-fit"
-        >
-          Design My Plan →
-        </a>
+        <CTAButton href="#consultation" variant="primary">
+          Request Your Consultation
+        </CTAButton>
       </div>
       <div className="mt-14 grid md:grid-cols-2 lg:grid-cols-3 gap-6">
         {list.map((t) => (
