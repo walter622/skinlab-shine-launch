@@ -218,12 +218,14 @@ function Hero() {
           className="lg:col-span-5 relative"
         >
           <div className="absolute inset-0 border border-gold/30 pointer-events-none" />
-          <img
-            src={teamAsset.url}
-            alt="Leticia and Guilherme, founding specialists at Skin Lab Med Spa"
-            className="relative w-full h-[520px] md:h-[620px] object-cover object-top"
-          />
-          <div className="absolute bottom-4 left-4 right-4 bg-forest/85 backdrop-blur px-5 py-4 border-l-2 border-gold">
+          <div className="p-5">
+            <img
+              src={teamAsset.url}
+              alt="Leticia and Guilherme, founding specialists at Skin Lab Med Spa"
+              className="w-full h-[480px] md:h-[580px] object-cover object-top"
+            />
+          </div>
+          <div className="absolute bottom-9 left-9 right-9 bg-forest/85 backdrop-blur px-5 py-4 border-l-2 border-gold">
             <div className="text-[10px] tracking-[0.28em] uppercase text-gold">
               Founding Specialists
             </div>
