@@ -95,9 +95,9 @@ function Nav() {
   ];
   return (
     <header className="fixed top-0 inset-x-0 z-50 bg-forest/95 backdrop-blur border-b border-gold/15">
-      <div className="mx-auto max-w-6xl px-6 md:px-10 lg:px-16 h-24 md:h-28 flex items-center justify-between">
+      <div className="mx-auto max-w-6xl px-6 md:px-10 lg:px-16 h-36 md:h-48 flex items-center justify-between">
         <a href="#top" className="flex items-center">
-          <img src={logoAsset.url} alt="Skin Lab Med Spa" className="h-28 md:h-44 w-auto" />
+          <img src={logoAsset.url} alt="Skin Lab Med Spa" className="h-32 md:h-44 w-auto" />
         </a>
         <nav className="hidden lg:flex items-center gap-9">
           {links.map(([label, href]) => (
@@ -163,7 +163,7 @@ function Hero() {
   return (
     <section
       id="top"
-      className="relative pt-36 md:pt-44 pb-20 md:pb-28 bg-forest text-cream overflow-hidden"
+      className="relative pt-44 md:pt-56 pb-20 md:pb-28 bg-forest text-cream overflow-hidden"
     >
       <div
         aria-hidden
@@ -218,11 +218,11 @@ function Hero() {
           className="lg:col-span-5 relative"
         >
           <div className="absolute inset-0 border border-gold/30 pointer-events-none" />
-          <div className="p-5">
+          <div className="p-4 md:p-5">
             <img
               src={teamAsset.url}
               alt="Leticia and Guilherme, founding specialists at Skin Lab Med Spa"
-              className="w-full h-[480px] md:h-[580px] object-cover object-top"
+              className="w-full h-[420px] md:h-[580px] object-cover object-[center_15%]"
             />
           </div>
           <div className="absolute bottom-9 left-9 right-9 bg-forest/85 backdrop-blur px-5 py-4 border-l-2 border-gold">
@@ -483,7 +483,7 @@ function Results() {
                 <img
                   src={it.before}
                   alt={it.title}
-                  className="w-full h-[520px] object-cover"
+                  className="w-full h-[360px] md:h-[520px] object-cover"
                 />
               </div>
             ) : (
@@ -492,7 +492,7 @@ function Results() {
                   <img
                     src={it.before}
                     alt={`${it.title} — before`}
-                    className="w-full h-[520px] object-cover"
+                    className="w-full h-[360px] md:h-[520px] object-cover"
                   />
                   <span className="absolute top-4 left-4 bg-forest/85 text-cream px-3 py-1 text-[10px] tracking-[0.28em] uppercase">
                     Before
@@ -502,7 +502,7 @@ function Results() {
                   <img
                     src={it.after}
                     alt={`${it.title} — after`}
-                    className="w-full h-[520px] object-cover"
+                    className="w-full h-[360px] md:h-[520px] object-cover"
                   />
                   <span className="absolute top-4 left-4 bg-gold text-forest px-3 py-1 text-[10px] tracking-[0.28em] uppercase">
                     After
@@ -533,7 +533,7 @@ function Team() {
           <img
             src={teamAsset.url}
             alt="Leticia and Guilherme, founding specialists"
-            className="relative w-full h-[560px] object-cover"
+            className="relative w-full h-[420px] md:h-[560px] object-cover object-top"
           />
         </div>
         <div className="lg:col-span-7">
