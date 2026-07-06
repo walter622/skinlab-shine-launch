@@ -97,7 +97,7 @@ function Nav() {
     <header className="fixed top-0 inset-x-0 z-50 bg-forest/95 backdrop-blur border-b border-gold/15">
       <div className="mx-auto max-w-6xl px-6 md:px-10 lg:px-16 h-24 md:h-28 flex items-center justify-between">
         <a href="#top" className="flex items-center">
-          <img src={logoAsset.url} alt="Skin Lab Med Spa" className="h-20 md:h-28 w-auto" />
+          <img src={logoAsset.url} alt="Skin Lab Med Spa" className="h-24 md:h-36 w-auto" />
         </a>
         <nav className="hidden lg:flex items-center gap-9">
           {links.map(([label, href]) => (
@@ -489,12 +489,6 @@ function Results() {
                   alt={it.title}
                   className="w-full h-[520px] object-cover"
                 />
-                <span className="absolute top-4 left-4 bg-forest/85 text-cream px-3 py-1 text-[10px] tracking-[0.28em] uppercase">
-                  Before
-                </span>
-                <span className="absolute bottom-4 left-4 bg-gold text-forest px-3 py-1 text-[10px] tracking-[0.28em] uppercase">
-                  After
-                </span>
               </div>
             ) : (
               <div className="grid grid-cols-2 gap-1">
