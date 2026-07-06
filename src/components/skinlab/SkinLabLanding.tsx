@@ -645,6 +645,11 @@ function FAQ() {
           })}
         </div>
       </div>
+      <div className="mt-12 lg:col-span-12">
+        <CTAButton href="#consultation" variant="primary">
+          Request Your Consultation
+        </CTAButton>
+      </div>
     </Section>
   );
 }
