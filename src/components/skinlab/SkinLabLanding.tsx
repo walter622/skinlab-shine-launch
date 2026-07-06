@@ -182,7 +182,7 @@ function Hero() {
         >
           <h1 className="mt-6 font-display text-[42px] leading-[1.05] md:text-6xl lg:text-[68px] font-light tracking-tight">
             Reclaim the pinnacle of{" "}
-            <em className="text-gold not-italic font-normal">radiance</em> — before time
+            <em className="text-gold not-italic font-normal">radiance</em>,{"\u00A0"}before time
             dulls your glow.
           </h1>
           <p className="mt-8 max-w-xl text-cream/75 leading-relaxed text-[15px] md:text-base">
