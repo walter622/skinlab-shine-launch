@@ -483,7 +483,7 @@ function Results() {
                 <img
                   src={it.before}
                   alt={it.title}
-                  className="w-full h-[520px] object-cover"
+                  className="w-full h-[360px] md:h-[520px] object-cover"
                 />
               </div>
             ) : (
@@ -492,7 +492,7 @@ function Results() {
                   <img
                     src={it.before}
                     alt={`${it.title} — before`}
-                    className="w-full h-[520px] object-cover"
+                    className="w-full h-[360px] md:h-[520px] object-cover"
                   />
                   <span className="absolute top-4 left-4 bg-forest/85 text-cream px-3 py-1 text-[10px] tracking-[0.28em] uppercase">
                     Before
@@ -502,7 +502,7 @@ function Results() {
                   <img
                     src={it.after}
                     alt={`${it.title} — after`}
-                    className="w-full h-[520px] object-cover"
+                    className="w-full h-[360px] md:h-[520px] object-cover"
                   />
                   <span className="absolute top-4 left-4 bg-gold text-forest px-3 py-1 text-[10px] tracking-[0.28em] uppercase">
                     After
