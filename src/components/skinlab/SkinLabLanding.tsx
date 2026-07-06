@@ -492,7 +492,7 @@ function Results() {
                 <span className="absolute top-4 left-4 bg-forest/85 text-cream px-3 py-1 text-[10px] tracking-[0.28em] uppercase">
                   Before
                 </span>
-                <span className="absolute top-4 right-4 bg-gold text-forest px-3 py-1 text-[10px] tracking-[0.28em] uppercase">
+                <span className="absolute bottom-4 left-4 bg-gold text-forest px-3 py-1 text-[10px] tracking-[0.28em] uppercase">
                   After
                 </span>
               </div>
