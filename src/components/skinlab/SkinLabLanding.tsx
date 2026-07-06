@@ -97,7 +97,7 @@ function Nav() {
     <header className="fixed top-0 inset-x-0 z-50 bg-forest/95 backdrop-blur border-b border-gold/15">
       <div className="mx-auto max-w-6xl px-6 md:px-10 lg:px-16 h-20 flex items-center justify-between">
         <a href="#top" className="flex items-center">
-          <img src={logoAsset.url} alt="Skin Lab Med Spa" className="h-9 md:h-10 w-auto" />
+          <img src={logoAsset.url} alt="Skin Lab Med Spa" className="h-14 md:h-16 w-auto" />
         </a>
         <nav className="hidden lg:flex items-center gap-9">
           {links.map(([label, href]) => (
@@ -180,7 +180,6 @@ function Hero() {
           variants={fadeUp}
           className="lg:col-span-7"
         >
-          <Eyebrow>Advanced Aesthetics · Charlotte, NC</Eyebrow>
           <h1 className="mt-6 font-display text-[42px] leading-[1.05] md:text-6xl lg:text-[68px] font-light tracking-tight">
             Reclaim the pinnacle of{" "}
             <em className="text-gold not-italic font-normal">radiance</em> — before time
@@ -279,7 +278,6 @@ function Why() {
   return (
     <Section id="why" className="bg-ivory">
       <div className="max-w-3xl">
-        <Eyebrow>Why invest in your appearance now</Eyebrow>
         <h2 className="mt-5 font-display text-4xl md:text-5xl text-forest font-light leading-tight">
           A tailored age-management plan for a consistently refreshed presence.
         </h2>
@@ -356,7 +354,6 @@ function Objections() {
   return (
     <Section id="objections" className="bg-forest text-cream">
       <div className="max-w-2xl">
-        <Eyebrow>What most realize too late</Eyebrow>
         <h2 className="mt-5 font-display text-4xl md:text-5xl font-light leading-tight">
           The truths that separate boutique care from the rest.
         </h2>
@@ -424,7 +421,6 @@ function Treatments() {
     <Section id="treatments" className="bg-sand">
       <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6">
         <div className="max-w-2xl">
-          <Eyebrow>Signature Treatments</Eyebrow>
           <h2 className="mt-5 font-display text-4xl md:text-5xl text-forest font-light leading-tight">
             Advanced procedures engineered for elegance.
           </h2>
@@ -479,7 +475,6 @@ function Results() {
   return (
     <Section id="results" className="bg-ivory">
       <div className="max-w-2xl">
-        <Eyebrow>Real Results</Eyebrow>
         <h2 className="mt-5 font-display text-4xl md:text-5xl text-forest font-light leading-tight">
           Before & after — natural, never overdone.
         </h2>
@@ -546,7 +541,6 @@ function Team() {
           />
         </div>
         <div className="lg:col-span-7">
-          <Eyebrow>Meet the Specialists</Eyebrow>
           <h2 className="mt-5 font-display text-4xl md:text-5xl font-light leading-tight">
             Leticia & Guilherme
           </h2>
@@ -608,7 +602,6 @@ function FAQ() {
     <Section id="faq" className="bg-ivory">
       <div className="grid lg:grid-cols-12 gap-12">
         <div className="lg:col-span-4">
-          <Eyebrow>Frequently Asked</Eyebrow>
           <h2 className="mt-5 font-display text-4xl md:text-5xl text-forest font-light leading-tight">
             Answers, before you ask.
           </h2>
@@ -691,7 +684,6 @@ function Consultation() {
     <Section id="consultation" className="bg-forest text-cream">
       <div className="grid lg:grid-cols-12 gap-12">
         <div className="lg:col-span-5">
-          <Eyebrow>Reserve Your Consultation</Eyebrow>
           <h2 className="mt-5 font-display text-4xl md:text-5xl font-light leading-tight">
             Design your personalized aesthetic plan.
           </h2>
@@ -796,7 +788,6 @@ function Consultation() {
 function FinalCTA() {
   return (
     <Section className="bg-sand text-forest text-center">
-      <Eyebrow>The Skin Lab Standard</Eyebrow>
       <h2 className="mt-5 font-display text-4xl md:text-6xl font-light leading-tight max-w-3xl mx-auto">
         Do not wait for time to deepen what elegance can prevent today.
       </h2>
