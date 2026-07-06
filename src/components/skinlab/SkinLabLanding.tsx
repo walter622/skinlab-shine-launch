@@ -380,6 +380,11 @@ function Objections() {
           </motion.div>
         ))}
       </div>
+      <div className="mt-12">
+        <CTAButton href="#consultation" variant="gold">
+          Request Your Consultation
+        </CTAButton>
+      </div>
     </Section>
   );
 }
