@@ -70,7 +70,7 @@ function CTAButton({
   children: React.ReactNode;
 }) {
   const base =
-    "inline-flex items-center justify-center gap-2 px-7 py-3.5 text-[13px] tracking-[0.22em] uppercase font-medium transition-all duration-300";
+    "inline-flex items-center justify-center gap-2 px-5 md:px-7 py-3 md:py-3.5 text-[11px] md:text-[13px] tracking-[0.16em] md:tracking-[0.22em] uppercase font-medium whitespace-nowrap transition-all duration-300";
   const styles = {
     primary: "bg-forest text-cream hover:bg-forest-deep",
     gold: "bg-gold text-forest hover:bg-gold-soft",
