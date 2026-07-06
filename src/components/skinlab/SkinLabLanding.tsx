@@ -95,9 +95,9 @@ function Nav() {
   ];
   return (
     <header className="fixed top-0 inset-x-0 z-50 bg-forest/95 backdrop-blur border-b border-gold/15">
-      <div className="mx-auto max-w-6xl px-6 md:px-10 lg:px-16 h-32 md:h-48 flex items-center justify-between">
+      <div className="mx-auto max-w-6xl px-6 md:px-10 lg:px-16 h-36 md:h-48 flex items-center justify-between">
         <a href="#top" className="flex items-center">
-          <img src={logoAsset.url} alt="Skin Lab Med Spa" className="h-28 md:h-44 w-auto" />
+          <img src={logoAsset.url} alt="Skin Lab Med Spa" className="h-32 md:h-44 w-auto" />
         </a>
         <nav className="hidden lg:flex items-center gap-9">
           {links.map(([label, href]) => (
