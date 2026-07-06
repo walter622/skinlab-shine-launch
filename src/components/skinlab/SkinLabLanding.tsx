@@ -163,7 +163,7 @@ function Hero() {
   return (
     <section
       id="top"
-      className="relative pt-40 md:pt-52 pb-20 md:pb-28 bg-forest text-cream overflow-hidden"
+      className="relative pt-44 md:pt-56 pb-20 md:pb-28 bg-forest text-cream overflow-hidden"
     >
       <div
         aria-hidden
