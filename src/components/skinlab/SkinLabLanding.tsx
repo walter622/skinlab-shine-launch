@@ -70,7 +70,7 @@ function CTAButton({
   children: React.ReactNode;
 }) {
   const base =
-    "inline-flex items-center justify-center gap-2 px-7 py-3.5 text-[13px] tracking-[0.22em] uppercase font-medium transition-all duration-300";
+    "inline-flex items-center justify-center gap-2 px-5 md:px-7 py-3 md:py-3.5 text-[11px] md:text-[13px] tracking-[0.16em] md:tracking-[0.22em] uppercase font-medium whitespace-nowrap transition-all duration-300";
   const styles = {
     primary: "bg-forest text-cream hover:bg-forest-deep",
     gold: "bg-gold text-forest hover:bg-gold-soft",
@@ -282,6 +282,11 @@ function Why() {
           next-generation medical technology with a sophisticated eye for advanced
           aesthetics to keep you looking pristine and elegant at any age.
         </p>
+        <div className="mt-8">
+          <CTAButton href="#consultation" variant="primary">
+            Request Your Consultation
+          </CTAButton>
+        </div>
       </div>
 
       <div className="mt-14 relative aspect-video w-full bg-forest overflow-hidden group cursor-pointer">
@@ -375,6 +380,11 @@ function Objections() {
           </motion.div>
         ))}
       </div>
+      <div className="mt-12">
+        <CTAButton href="#consultation" variant="gold">
+          Request Your Consultation
+        </CTAButton>
+      </div>
     </Section>
   );
 }
@@ -421,12 +431,9 @@ function Treatments() {
             Advanced procedures engineered for elegance.
           </h2>
         </div>
-        <a
-          href="#consultation"
-          className="text-[12px] tracking-[0.24em] uppercase text-forest/70 hover:text-gold border-b border-forest/20 hover:border-gold pb-1 w-fit"
-        >
-          Design My Plan →
-        </a>
+        <CTAButton href="#consultation" variant="primary">
+          Request Your Consultation
+        </CTAButton>
       </div>
       <div className="mt-14 grid md:grid-cols-2 lg:grid-cols-3 gap-6">
         {list.map((t) => (
@@ -445,6 +452,11 @@ function Treatments() {
             <p className="mt-4 text-sm text-forest/70 leading-relaxed">{t.body}</p>
           </motion.div>
         ))}
+      </div>
+      <div className="mt-12">
+        <CTAButton href="#consultation" variant="primary">
+          Request Your Consultation
+        </CTAButton>
       </div>
     </Section>
   );
@@ -519,6 +531,11 @@ function Results() {
           </div>
         ))}
       </div>
+      <div className="mt-12">
+        <CTAButton href="#consultation" variant="primary">
+          Request Your Consultation
+        </CTAButton>
+      </div>
     </Section>
   );
 }
@@ -556,7 +573,7 @@ function Team() {
           </p>
           <div className="mt-10 flex flex-wrap gap-4">
             <CTAButton href="#consultation" variant="gold">
-              Book With Us
+              Request Your Consultation
             </CTAButton>
             <a
               href={INSTAGRAM}
@@ -627,6 +644,11 @@ function FAQ() {
             );
           })}
         </div>
+      </div>
+      <div className="mt-12 lg:col-span-12">
+        <CTAButton href="#consultation" variant="primary">
+          Request Your Consultation
+        </CTAButton>
       </div>
     </Section>
   );
@@ -793,7 +815,7 @@ function FinalCTA() {
       </p>
       <div className="mt-10">
         <CTAButton href="#consultation" variant="primary">
-          Book Your Consultation
+          Request Your Consultation
         </CTAButton>
       </div>
     </Section>
