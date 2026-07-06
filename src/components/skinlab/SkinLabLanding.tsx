@@ -217,7 +217,7 @@ function Hero() {
           transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
           className="lg:col-span-5 relative"
         >
-          <div className="absolute -inset-6 border border-gold/30 translate-x-4 translate-y-4" />
+          <div className="absolute inset-0 border border-gold/30 pointer-events-none" />
           <img
             src={teamAsset.url}
             alt="Leticia and Guilherme, founding specialists at Skin Lab Med Spa"
