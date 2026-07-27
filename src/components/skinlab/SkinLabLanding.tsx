@@ -468,15 +468,27 @@ function Treatments() {
   ];
   return (
     <Section id="treatments" className="bg-sand">
-      <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6">
-        <div className="max-w-2xl">
+      <div className="grid lg:grid-cols-12 gap-10 items-end">
+        <div className="lg:col-span-7">
           <h2 className="mt-5 font-display text-4xl md:text-5xl text-forest font-light leading-tight">
             Advanced procedures engineered for elegance.
           </h2>
+          <div className="mt-8">
+            <CTAButton href="#consultation" variant="primary">
+              Request Your Consultation
+            </CTAButton>
+          </div>
         </div>
-        <CTAButton href="#consultation" variant="primary">
-          Request Your Consultation
-        </CTAButton>
+        <div className="lg:col-span-5 relative">
+          <img
+            src={leticiaUltraformerAsset.url}
+            alt="Leticia performing an Ultraformer MPT session"
+            className="w-full h-[260px] md:h-[340px] object-cover"
+          />
+          <span className="absolute bottom-4 left-4 bg-forest/85 text-cream px-3 py-1 text-[10px] tracking-[0.28em] uppercase">
+            Ultraformer MPT
+          </span>
+        </div>
       </div>
       <div className="mt-14 grid md:grid-cols-2 lg:grid-cols-3 gap-6">
         {list.map((t) => (
