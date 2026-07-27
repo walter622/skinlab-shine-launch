@@ -299,9 +299,9 @@ function Why() {
 
       <div className="mt-14 relative aspect-video w-full bg-forest overflow-hidden group cursor-pointer">
         <img
-          src={teamAsset.url}
+          src={leticiaRinglightAsset.url}
           alt=""
-          className="absolute inset-0 w-full h-full object-cover opacity-40"
+          className="absolute inset-0 w-full h-full object-cover opacity-45"
         />
         <div className="absolute inset-0 bg-forest/50" />
         <div className="absolute inset-0 flex flex-col items-center justify-center text-cream">
