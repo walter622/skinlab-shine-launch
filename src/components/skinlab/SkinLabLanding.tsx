@@ -24,6 +24,14 @@ import teamAsset from "@/assets/team.png.asset.json";
 import browsAsset from "@/assets/before-after-brows.jpg.asset.json";
 import beforeLipsAsset from "@/assets/before-lips.jpg.asset.json";
 import afterLipsAsset from "@/assets/after-lips.jpg.asset.json";
+import teamDuoAsset from "@/assets/team-duo.jpg.asset.json";
+import guilhermeInjectingAsset from "@/assets/guilherme-injecting.jpg.asset.json";
+import leticiaRinglightAsset from "@/assets/leticia-ringlight.jpg.asset.json";
+import leticiaUltraformerAsset from "@/assets/leticia-ultraformer.jpg.asset.json";
+import treatmentFacialAsset from "@/assets/treatment-facial.jpg.asset.json";
+import treatmentInjectionAsset from "@/assets/treatment-injection.jpg.asset.json";
+import treatmentMaskAsset from "@/assets/treatment-mask.jpg.asset.json";
+import treatmentDeviceAsset from "@/assets/treatment-device.jpg.asset.json";
 
 const INSTAGRAM = "https://www.instagram.com/skinlab_medspa/";
 const PHONE_DISPLAY = "+1 (980) 309-3768";
@@ -220,9 +228,9 @@ function Hero() {
           <div className="absolute inset-0 border border-gold/30 pointer-events-none" />
           <div className="p-4 md:p-5">
             <img
-              src={teamAsset.url}
+              src={teamDuoAsset.url}
               alt="Leticia and Guilherme, founding specialists at Skin Lab Med Spa"
-              className="w-full h-[420px] md:h-[580px] object-cover object-[center_15%]"
+              className="w-full h-[420px] md:h-[580px] object-cover object-[center_20%]"
             />
           </div>
           <div className="absolute bottom-9 left-9 right-9 bg-forest/85 backdrop-blur px-5 py-4 border-l-2 border-gold">
@@ -291,9 +299,9 @@ function Why() {
 
       <div className="mt-14 relative aspect-video w-full bg-forest overflow-hidden group cursor-pointer">
         <img
-          src={teamAsset.url}
+          src={leticiaRinglightAsset.url}
           alt=""
-          className="absolute inset-0 w-full h-full object-cover opacity-40"
+          className="absolute inset-0 w-full h-full object-cover opacity-45"
         />
         <div className="absolute inset-0 bg-forest/50" />
         <div className="absolute inset-0 flex flex-col items-center justify-center text-cream">
@@ -463,6 +471,61 @@ function Treatments() {
 }
 
 /* ---------------- RESULTS ---------------- */
+/* ---------------- INSIDE THE STUDIO ---------------- */
+function Studio() {
+  const shots = [
+    { src: guilhermeInjectingAsset.url, caption: "Precision Injectables", span: "md:col-span-2 md:row-span-2" },
+    { src: leticiaUltraformerAsset.url, caption: "Ultraformer MPT", span: "" },
+    { src: treatmentInjectionAsset.url, caption: "Advanced Skinboosters", span: "" },
+    { src: treatmentDeviceAsset.url, caption: "Medical-Grade Devices", span: "" },
+    { src: treatmentMaskAsset.url, caption: "Post-Care Rituals", span: "" },
+    { src: treatmentFacialAsset.url, caption: "Signature Facials", span: "md:col-span-2" },
+  ];
+  return (
+    <Section id="studio" className="bg-forest text-cream">
+      <div className="max-w-2xl">
+        <h2 className="mt-5 font-display text-4xl md:text-5xl font-light leading-tight">
+          Inside the studio — every detail, engineered for you.
+        </h2>
+        <p className="mt-6 text-cream/70 leading-relaxed">
+          A private, medical-grade environment where every protocol is delivered
+          personally by Leticia or Guilherme.
+        </p>
+      </div>
+      <div className="mt-14 grid grid-cols-2 md:grid-cols-4 auto-rows-[180px] md:auto-rows-[220px] gap-3">
+        {shots.map((s, i) => (
+          <motion.div
+            key={i}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true, margin: "-60px" }}
+            variants={fadeUp}
+            className={`relative overflow-hidden group ${s.span}`}
+          >
+            <img
+              src={s.src}
+              alt={s.caption}
+              className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-forest/90 via-forest/10 to-transparent" />
+            <div className="absolute bottom-4 left-4 right-4">
+              <div className="text-[10px] tracking-[0.28em] uppercase text-gold">
+                {s.caption}
+              </div>
+            </div>
+          </motion.div>
+        ))}
+      </div>
+      <div className="mt-12">
+        <CTAButton href="#consultation" variant="gold">
+          Request Your Consultation
+        </CTAButton>
+      </div>
+    </Section>
+  );
+}
+
+/* ---------------- RESULTS ---------------- */
 function Results() {
   const items = [
     {
@@ -548,9 +611,9 @@ function Team() {
         <div className="lg:col-span-5 relative">
           <div className="absolute -inset-5 border border-gold/30 -translate-x-4 -translate-y-4" />
           <img
-            src={teamAsset.url}
+            src={teamDuoAsset.url}
             alt="Leticia and Guilherme, founding specialists"
-            className="relative w-full h-[420px] md:h-[560px] object-cover object-top"
+            className="relative w-full h-[420px] md:h-[560px] object-cover object-[center_20%]"
           />
         </div>
         <div className="lg:col-span-7">
@@ -877,6 +940,7 @@ export function SkinLabLanding() {
       <Why />
       <Objections />
       <Treatments />
+      <Studio />
       <Results />
       <Team />
       <FAQ />
