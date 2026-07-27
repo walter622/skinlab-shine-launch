@@ -24,6 +24,14 @@ import teamAsset from "@/assets/team.png.asset.json";
 import browsAsset from "@/assets/before-after-brows.jpg.asset.json";
 import beforeLipsAsset from "@/assets/before-lips.jpg.asset.json";
 import afterLipsAsset from "@/assets/after-lips.jpg.asset.json";
+import teamDuoAsset from "@/assets/team-duo.jpg.asset.json";
+import guilhermeInjectingAsset from "@/assets/guilherme-injecting.jpg.asset.json";
+import leticiaRinglightAsset from "@/assets/leticia-ringlight.jpg.asset.json";
+import leticiaUltraformerAsset from "@/assets/leticia-ultraformer.jpg.asset.json";
+import treatmentFacialAsset from "@/assets/treatment-facial.jpg.asset.json";
+import treatmentInjectionAsset from "@/assets/treatment-injection.jpg.asset.json";
+import treatmentMaskAsset from "@/assets/treatment-mask.jpg.asset.json";
+import treatmentDeviceAsset from "@/assets/treatment-device.jpg.asset.json";
 
 const INSTAGRAM = "https://www.instagram.com/skinlab_medspa/";
 const PHONE_DISPLAY = "+1 (980) 309-3768";
