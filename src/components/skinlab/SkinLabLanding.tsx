@@ -332,6 +332,31 @@ function Why() {
           </div>
         ))}
       </div>
+
+      <div className="mt-16 grid md:grid-cols-2 gap-1">
+        <div className="relative overflow-hidden h-[300px] md:h-[420px] group">
+          <img
+            src={treatmentInjectionAsset.url}
+            alt="Advanced skinboosters at Skin Lab"
+            className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-forest/80 via-forest/10 to-transparent" />
+          <div className="absolute bottom-5 left-5 text-[10px] tracking-[0.28em] uppercase text-gold">
+            Advanced Skinboosters
+          </div>
+        </div>
+        <div className="relative overflow-hidden h-[300px] md:h-[420px] group">
+          <img
+            src={treatmentDeviceAsset.url}
+            alt="Medical-grade aesthetic devices"
+            className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-forest/80 via-forest/10 to-transparent" />
+          <div className="absolute bottom-5 left-5 text-[10px] tracking-[0.28em] uppercase text-gold">
+            Medical-Grade Devices
+          </div>
+        </div>
+      </div>
     </Section>
   );
 }
@@ -362,10 +387,20 @@ function Objections() {
   ];
   return (
     <Section id="objections" className="bg-forest text-cream">
-      <div className="max-w-2xl">
-        <h2 className="mt-5 font-display text-4xl md:text-5xl font-light leading-tight">
-          The truths that separate boutique care from the rest.
-        </h2>
+      <div className="grid lg:grid-cols-12 gap-12 items-center">
+        <div className="lg:col-span-7">
+          <h2 className="mt-5 font-display text-4xl md:text-5xl font-light leading-tight">
+            The truths that separate boutique care from the rest.
+          </h2>
+        </div>
+        <div className="lg:col-span-5 relative">
+          <div className="absolute -inset-4 border border-gold/30 -translate-x-3 -translate-y-3" />
+          <img
+            src={guilhermeInjectingAsset.url}
+            alt="Guilherme performing a precision injection"
+            className="relative w-full h-[280px] md:h-[380px] object-cover"
+          />
+        </div>
       </div>
       <div className="mt-14 grid md:grid-cols-2 gap-6">
         {items.map(({ fear, truth }, i) => (
@@ -433,15 +468,27 @@ function Treatments() {
   ];
   return (
     <Section id="treatments" className="bg-sand">
-      <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6">
-        <div className="max-w-2xl">
+      <div className="grid lg:grid-cols-12 gap-10 items-end">
+        <div className="lg:col-span-7">
           <h2 className="mt-5 font-display text-4xl md:text-5xl text-forest font-light leading-tight">
             Advanced procedures engineered for elegance.
           </h2>
+          <div className="mt-8">
+            <CTAButton href="#consultation" variant="primary">
+              Request Your Consultation
+            </CTAButton>
+          </div>
         </div>
-        <CTAButton href="#consultation" variant="primary">
-          Request Your Consultation
-        </CTAButton>
+        <div className="lg:col-span-5 relative">
+          <img
+            src={leticiaUltraformerAsset.url}
+            alt="Leticia performing an Ultraformer MPT session"
+            className="w-full h-[260px] md:h-[340px] object-cover"
+          />
+          <span className="absolute bottom-4 left-4 bg-forest/85 text-cream px-3 py-1 text-[10px] tracking-[0.28em] uppercase">
+            Ultraformer MPT
+          </span>
+        </div>
       </div>
       <div className="mt-14 grid md:grid-cols-2 lg:grid-cols-3 gap-6">
         {list.map((t) => (
@@ -681,6 +728,14 @@ function FAQ() {
           <h2 className="mt-5 font-display text-4xl md:text-5xl text-forest font-light leading-tight">
             Answers, before you ask.
           </h2>
+          <div className="mt-8 relative hidden lg:block">
+            <div className="absolute -inset-4 border border-gold/40 -translate-x-3 -translate-y-3" />
+            <img
+              src={treatmentMaskAsset.url}
+              alt="Post-care mask ritual at Skin Lab"
+              className="relative w-full h-[380px] object-cover"
+            />
+          </div>
         </div>
         <div className="lg:col-span-8">
           {faqs.map((f, i) => {
@@ -868,20 +923,29 @@ function Consultation() {
 /* ---------------- FINAL CTA + FOOTER ---------------- */
 function FinalCTA() {
   return (
-    <Section className="bg-sand text-forest text-center">
-      <h2 className="mt-5 font-display text-4xl md:text-6xl font-light leading-tight max-w-3xl mx-auto">
-        Do not wait for time to deepen what elegance can prevent today.
-      </h2>
-      <p className="mt-6 max-w-xl mx-auto text-forest/70 leading-relaxed">
-        Skin Lab Med Spa bridges global clinical innovation with high-touch
-        boutique care to deliver the sophisticated, natural results you deserve.
-      </p>
-      <div className="mt-10">
-        <CTAButton href="#consultation" variant="primary">
-          Request Your Consultation
-        </CTAButton>
+    <section className="relative px-6 md:px-10 lg:px-16 py-24 md:py-32 text-cream text-center overflow-hidden">
+      <img
+        src={treatmentFacialAsset.url}
+        alt=""
+        aria-hidden
+        className="absolute inset-0 w-full h-full object-cover"
+      />
+      <div className="absolute inset-0 bg-forest/80" />
+      <div className="relative mx-auto max-w-3xl">
+        <h2 className="font-display text-4xl md:text-6xl font-light leading-tight">
+          Do not wait for time to deepen what elegance can prevent today.
+        </h2>
+        <p className="mt-6 max-w-xl mx-auto text-cream/80 leading-relaxed">
+          Skin Lab Med Spa bridges global clinical innovation with high-touch
+          boutique care to deliver the sophisticated, natural results you deserve.
+        </p>
+        <div className="mt-10">
+          <CTAButton href="#consultation" variant="gold">
+            Request Your Consultation
+          </CTAButton>
+        </div>
       </div>
-    </Section>
+    </section>
   );
 }
 
@@ -940,7 +1004,6 @@ export function SkinLabLanding() {
       <Why />
       <Objections />
       <Treatments />
-      <Studio />
       <Results />
       <Team />
       <FAQ />
