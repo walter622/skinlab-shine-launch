@@ -728,6 +728,14 @@ function FAQ() {
           <h2 className="mt-5 font-display text-4xl md:text-5xl text-forest font-light leading-tight">
             Answers, before you ask.
           </h2>
+          <div className="mt-8 relative hidden lg:block">
+            <div className="absolute -inset-4 border border-gold/40 -translate-x-3 -translate-y-3" />
+            <img
+              src={treatmentMaskAsset.url}
+              alt="Post-care mask ritual at Skin Lab"
+              className="relative w-full h-[380px] object-cover"
+            />
+          </div>
         </div>
         <div className="lg:col-span-8">
           {faqs.map((f, i) => {
