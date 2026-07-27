@@ -923,20 +923,29 @@ function Consultation() {
 /* ---------------- FINAL CTA + FOOTER ---------------- */
 function FinalCTA() {
   return (
-    <Section className="bg-sand text-forest text-center">
-      <h2 className="mt-5 font-display text-4xl md:text-6xl font-light leading-tight max-w-3xl mx-auto">
-        Do not wait for time to deepen what elegance can prevent today.
-      </h2>
-      <p className="mt-6 max-w-xl mx-auto text-forest/70 leading-relaxed">
-        Skin Lab Med Spa bridges global clinical innovation with high-touch
-        boutique care to deliver the sophisticated, natural results you deserve.
-      </p>
-      <div className="mt-10">
-        <CTAButton href="#consultation" variant="primary">
-          Request Your Consultation
-        </CTAButton>
+    <section className="relative px-6 md:px-10 lg:px-16 py-24 md:py-32 text-cream text-center overflow-hidden">
+      <img
+        src={treatmentFacialAsset.url}
+        alt=""
+        aria-hidden
+        className="absolute inset-0 w-full h-full object-cover"
+      />
+      <div className="absolute inset-0 bg-forest/80" />
+      <div className="relative mx-auto max-w-3xl">
+        <h2 className="font-display text-4xl md:text-6xl font-light leading-tight">
+          Do not wait for time to deepen what elegance can prevent today.
+        </h2>
+        <p className="mt-6 max-w-xl mx-auto text-cream/80 leading-relaxed">
+          Skin Lab Med Spa bridges global clinical innovation with high-touch
+          boutique care to deliver the sophisticated, natural results you deserve.
+        </p>
+        <div className="mt-10">
+          <CTAButton href="#consultation" variant="gold">
+            Request Your Consultation
+          </CTAButton>
+        </div>
       </div>
-    </Section>
+    </section>
   );
 }
 
@@ -995,7 +1004,6 @@ export function SkinLabLanding() {
       <Why />
       <Objections />
       <Treatments />
-      <Studio />
       <Results />
       <Team />
       <FAQ />
