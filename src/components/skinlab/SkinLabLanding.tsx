@@ -332,6 +332,31 @@ function Why() {
           </div>
         ))}
       </div>
+
+      <div className="mt-16 grid md:grid-cols-2 gap-1">
+        <div className="relative overflow-hidden h-[300px] md:h-[420px] group">
+          <img
+            src={treatmentInjectionAsset.url}
+            alt="Advanced skinboosters at Skin Lab"
+            className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-forest/80 via-forest/10 to-transparent" />
+          <div className="absolute bottom-5 left-5 text-[10px] tracking-[0.28em] uppercase text-gold">
+            Advanced Skinboosters
+          </div>
+        </div>
+        <div className="relative overflow-hidden h-[300px] md:h-[420px] group">
+          <img
+            src={treatmentDeviceAsset.url}
+            alt="Medical-grade aesthetic devices"
+            className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-forest/80 via-forest/10 to-transparent" />
+          <div className="absolute bottom-5 left-5 text-[10px] tracking-[0.28em] uppercase text-gold">
+            Medical-Grade Devices
+          </div>
+        </div>
+      </div>
     </Section>
   );
 }
@@ -362,10 +387,20 @@ function Objections() {
   ];
   return (
     <Section id="objections" className="bg-forest text-cream">
-      <div className="max-w-2xl">
-        <h2 className="mt-5 font-display text-4xl md:text-5xl font-light leading-tight">
-          The truths that separate boutique care from the rest.
-        </h2>
+      <div className="grid lg:grid-cols-12 gap-12 items-center">
+        <div className="lg:col-span-7">
+          <h2 className="mt-5 font-display text-4xl md:text-5xl font-light leading-tight">
+            The truths that separate boutique care from the rest.
+          </h2>
+        </div>
+        <div className="lg:col-span-5 relative">
+          <div className="absolute -inset-4 border border-gold/30 -translate-x-3 -translate-y-3" />
+          <img
+            src={guilhermeInjectingAsset.url}
+            alt="Guilherme performing a precision injection"
+            className="relative w-full h-[280px] md:h-[380px] object-cover"
+          />
+        </div>
       </div>
       <div className="mt-14 grid md:grid-cols-2 gap-6">
         {items.map(({ fear, truth }, i) => (
