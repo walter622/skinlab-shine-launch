@@ -471,6 +471,61 @@ function Treatments() {
 }
 
 /* ---------------- RESULTS ---------------- */
+/* ---------------- INSIDE THE STUDIO ---------------- */
+function Studio() {
+  const shots = [
+    { src: guilhermeInjectingAsset.url, caption: "Precision Injectables", span: "md:col-span-2 md:row-span-2" },
+    { src: leticiaUltraformerAsset.url, caption: "Ultraformer MPT", span: "" },
+    { src: treatmentInjectionAsset.url, caption: "Advanced Skinboosters", span: "" },
+    { src: treatmentDeviceAsset.url, caption: "Medical-Grade Devices", span: "" },
+    { src: treatmentMaskAsset.url, caption: "Post-Care Rituals", span: "" },
+    { src: treatmentFacialAsset.url, caption: "Signature Facials", span: "md:col-span-2" },
+  ];
+  return (
+    <Section id="studio" className="bg-forest text-cream">
+      <div className="max-w-2xl">
+        <h2 className="mt-5 font-display text-4xl md:text-5xl font-light leading-tight">
+          Inside the studio — every detail, engineered for you.
+        </h2>
+        <p className="mt-6 text-cream/70 leading-relaxed">
+          A private, medical-grade environment where every protocol is delivered
+          personally by Leticia or Guilherme.
+        </p>
+      </div>
+      <div className="mt-14 grid grid-cols-2 md:grid-cols-4 auto-rows-[180px] md:auto-rows-[220px] gap-3">
+        {shots.map((s, i) => (
+          <motion.div
+            key={i}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true, margin: "-60px" }}
+            variants={fadeUp}
+            className={`relative overflow-hidden group ${s.span}`}
+          >
+            <img
+              src={s.src}
+              alt={s.caption}
+              className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-forest/90 via-forest/10 to-transparent" />
+            <div className="absolute bottom-4 left-4 right-4">
+              <div className="text-[10px] tracking-[0.28em] uppercase text-gold">
+                {s.caption}
+              </div>
+            </div>
+          </motion.div>
+        ))}
+      </div>
+      <div className="mt-12">
+        <CTAButton href="#consultation" variant="gold">
+          Request Your Consultation
+        </CTAButton>
+      </div>
+    </Section>
+  );
+}
+
+/* ---------------- RESULTS ---------------- */
 function Results() {
   const items = [
     {
@@ -885,6 +940,7 @@ export function SkinLabLanding() {
       <Why />
       <Objections />
       <Treatments />
+      <Studio />
       <Results />
       <Team />
       <FAQ />
