@@ -29,6 +29,7 @@ import guilhermeInjectingAsset from "@/assets/guilherme-injecting.jpg.asset.json
 import leticiaRinglightAsset from "@/assets/leticia-ringlight.jpg.asset.json";
 import leticiaUltraformerAsset from "@/assets/leticia-ultraformer.jpg.asset.json";
 import treatmentFacialAsset from "@/assets/treatment-facial.jpg.asset.json";
+import treatmentDeviceAsset from "@/assets/treatment-device.jpg.asset.json";
 import treatmentInjectionAsset from "@/assets/treatment-injection.jpg.asset.json";
 import treatmentMaskAsset from "@/assets/treatment-mask.jpg.asset.json";
 import treatmentDeviceAsset from "@/assets/treatment-device.jpg.asset.json";
@@ -931,7 +932,7 @@ function FinalCTA() {
   return (
     <section className="relative px-6 md:px-10 lg:px-16 py-24 md:py-32 text-cream text-center overflow-hidden">
       <img
-        src={treatmentFacialAsset.url}
+        src={treatmentDeviceAsset.url}
         alt=""
         aria-hidden
         className="absolute inset-0 w-full h-full object-cover"
