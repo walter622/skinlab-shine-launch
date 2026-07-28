@@ -931,7 +931,7 @@ function FinalCTA() {
   return (
     <section className="relative px-6 md:px-10 lg:px-16 py-24 md:py-32 text-cream text-center overflow-hidden">
       <img
-        src={treatmentFacialAsset.url}
+        src={treatmentDeviceAsset.url}
         alt=""
         aria-hidden
         className="absolute inset-0 w-full h-full object-cover"
