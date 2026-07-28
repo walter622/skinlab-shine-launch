@@ -479,11 +479,11 @@ function Treatments() {
             </CTAButton>
           </div>
         </div>
-        <div className="lg:col-span-5 relative">
+        <div className="lg:col-span-5 relative bg-forest/5">
           <img
             src={leticiaUltraformerAsset.url}
             alt="Leticia performing an Ultraformer MPT session"
-            className="w-full h-[260px] md:h-[340px] object-cover"
+            className="w-full h-[320px] md:h-[440px] object-contain"
           />
           <span className="absolute bottom-4 left-4 bg-forest/85 text-cream px-3 py-1 text-[10px] tracking-[0.28em] uppercase">
             Ultraformer MPT
@@ -607,6 +607,12 @@ function Results() {
                   alt={it.title}
                   className="w-full h-[360px] md:h-[520px] object-cover"
                 />
+                <span className="absolute top-4 left-4 bg-forest/85 text-cream px-3 py-1 text-[10px] tracking-[0.28em] uppercase">
+                  Before
+                </span>
+                <span className="absolute bottom-4 left-4 bg-gold text-forest px-3 py-1 text-[10px] tracking-[0.28em] uppercase">
+                  After
+                </span>
               </div>
             ) : (
               <div className="grid grid-cols-2 gap-1">
